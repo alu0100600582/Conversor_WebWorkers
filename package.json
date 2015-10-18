@@ -4,8 +4,8 @@
   "description": "Práctica Conversor de Temperatura Mejorado",
   "main": "temperature.js",
   "scripts": {
-    "test": "node_modules/karma/bin/karma start --single-run",
-    "karma": "node_modules/karma/bin/karma start"
+    "test": "./node_modules/karma/bin/karma start --single-run",
+    
   },
 
 
