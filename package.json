@@ -1,11 +1,12 @@
 {
-  "name": "Conversor_Temperatura2",
+  "name": "Conversor_Temperatura WEb Workers",
   "version": "1.0.0",
-  "description": "Práctica Conversor de Temperatura Mejorado",
+  "description": "Práctica Conversor de Temperatura con Web Workers",
   "main": "temperature.js",
   "scripts": {
     "test": "./node_modules/karma/bin/karma start --single-run",
-    
+    "karma": "node_modules/karma/bin/karma start"
+
   },
 
 
@@ -29,13 +30,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alu0100600582/Conversor_Temperatura2.git"
+    "url": "git+https://github.com/alu0100600582/Conversor_WebWorkers.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/alu0100600582/Conversor_Temperatura2/issues"
+    "url": "https://github.com/alu0100600582/Conversor_WebWorkers/issues"
   },
-  "homepage": "https://github.com/alu0100600582/Conversor_Temperatura2#readme"
+  "homepage": "https://github.com/alu0100600582/Conversor_WebWorkers#readme"
 }
