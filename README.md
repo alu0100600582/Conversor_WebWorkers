@@ -4,7 +4,7 @@
 
 En esta práctica vamos a trabajar en la mejora de nuestro Conversor de Temperaturas, para ello vamos a hacer uso de la herencia en JavaScript y también haremos análisis de recubrimiento con Blanket.
 
-#### Requisitos de la Práctica: 
+#### Requisitos de la Práctica:
 
 
   -  Modifique la práctica anterior de la Temperatura para que use objetos y herencia.
@@ -16,6 +16,12 @@ En esta práctica vamos a trabajar en la mejora de nuestro Conversor de Temperat
   -  Reescriba el código para que use las clases.
 
   -  Añada a la práctica anterior de la temperatura el análisis de cubrimiento.
+
+---
+
+travis
+
+[![Build Status](https://travis-ci.org/alu0100600582/Conversor_WebWorkers.svg?branch=travis)](https://travis-ci.org/alu0100600582/Conversor_WebWorkers)
 
 
 ---
