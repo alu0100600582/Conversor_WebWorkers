@@ -1,5 +1,5 @@
 {
-  "name": "Conversor_Temperatura WEb Workers",
+  "name": "Conversor_Temperatura",
   "version": "1.0.0",
   "description": "Práctica Conversor de Temperatura con Web Workers",
   "main": "temperature.js",
@@ -32,6 +32,7 @@
     "type": "git",
     "url": "git+https://github.com/alu0100600582/Conversor_WebWorkers.git"
   },
+
   "keywords": [],
   "author": "",
   "license": "ISC",
