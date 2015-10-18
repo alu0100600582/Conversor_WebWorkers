@@ -4,7 +4,8 @@
   "description": "Práctica Conversor de Temperatura Mejorado",
   "main": "temperature.js",
   "scripts": {
-    "test": "node static-server"
+    "test": "./node_modules/karma/bin/karma start --single-run",
+    "karma": "node_modules/karma/bin/karma start"
   },
 
 
@@ -18,7 +19,13 @@
         "gulp-uglify": "^1.4.1",
         "gulp-util": "^3.0.6",
         "mocha": "*",
-        "node-static": "~0.7.6"
+        "node-static": "~0.7.6",
+        "karma": "*",
+        "karma-mocha": "*",
+        "karma-chai": "*",
+        "karma-html2js-preprocessor": "*",
+        "karma-firefox-launcher": "*"
+
   },
   "repository": {
     "type": "git",
