@@ -1,30 +1,35 @@
-## Práctica: Conversor de Temperaturas con Herencia
+## Práctica: Conversor de Temperaturas con Web Workers
 
 ### Descripción de la Práctica
 
-En esta práctica vamos a trabajar en la mejora de nuestro Conversor de Temperaturas, para ello vamos a hacer uso de la herencia en JavaScript y también haremos análisis de recubrimiento con Blanket.
+En esta práctica vamos a trabajar en la mejora de nuestro Conversor de Temperaturas, para ello vamos a implementar la conversión para poderla ejecutar en un Web Worker. También vamos a trabajar en el desarrollo de las pruebas con Karma y realizaremos la integración contínua con Travis.
 
-#### Requisitos de la Práctica: 
+#### Requisitos de la Práctica:
 
 
-  -  Modifique la práctica anterior de la Temperatura para que use objetos y herencia.
+- Modifique la práctica anterior de la temperatura con objetos y herencia para que la tarea de conversión se ejecute en un Web Worker
 
-  -  Defina una clase Medida cuyos objetos tienen un valor numérico (p. ej. 4.5e2) y un tipo dado por una cadena (p. ej   "Km" por Kilómetros o "m3" por metros cúbicos o "F" por grados Farenheit).
+- Añada a la práctica anterior el uso de Karma para la ejecución de las pruebas.
 
-  -  Las clase Temperatura hereda de Medida.
-
-  -  Reescriba el código para que use las clases.
-
-  -  Añada a la práctica anterior de la temperatura el análisis de cubrimiento.
+- Use Travis para la integración contínua. Inserte el badge de Travis en su README.md
 
 
 ---
-Repositorio Github: https://github.com/alu0100600582/Conversor_Temperatura2
 
-GitHub page de la aplicación: http://alu0100600582.github.io/Conversor_Temperatura2/
+Travis
 
-GitHub page de las pruebas: http://alu0100600582.github.io/Conversor_Temperatura2/tests/index
+[![Build Status](https://travis-ci.org/alu0100600582/Conversor_WebWorkers.svg?branch=travis)](https://travis-ci.org/alu0100600582/Conversor_WebWorkers)
 
-GitHub page de las pruebas con Blanket: http://alu0100600582.github.io/Conversor_Temperatura2/tests/test_blanket.html
+
+---
+Enlace a la Comunidad de la Asignatura: https://plus.google.com/u/1/communities/111920114018766363342?cfem=1
 
 Mi GitHub page: http://alu0100600582.github.io/
+
+Repositorio Github: https://github.com/alu0100600582/Conversor_WebWorkers
+
+GitHub page de la aplicación: http://alu0100600582.github.io/Conversor_WebWorkers/
+
+GitHub page de las pruebas: http://alu0100600582.github.io/Conversor_WebWorkers/tests/index
+
+GitHub page de las pruebas con Blanket: http://alu0100600582.github.io/Conversor_WebWorkers/tests/test_blanket.html
