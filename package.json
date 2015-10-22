@@ -3,12 +3,15 @@
   "version": "1.0.0",
   "description": "Práctica Conversor de Temperatura con Web Workers",
   "main": "temperature.js",
-  "scripts": {
-    "karma": "./node_modules/karma/bin/karma start karma.conf.js --single-run",
-
+  "directories": {
+   "test": "tests"
   },
 
+  "scripts": {
+    "karma": "./node_modules/karma/bin/karma start karma.conf.js --single-run",
+  },
 
+  "dependencies": {},
   "devDependencies": {
         "chai": "*",
         "del": "^2.0.2",
@@ -27,14 +30,13 @@
         "karma-chrome-launcher": "*",
         "karma-firefox-launcher": "*"
 
-
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/alu0100600582/Conversor_WebWorkers.git"
   },
 
-  "keywords": [],
+
   "author": "",
   "license": "ISC",
   "bugs": {
