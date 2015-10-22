@@ -4,8 +4,7 @@
   "description": "Práctica Conversor de Temperatura con Web Workers",
   "main": "temperature.js",
   "scripts": {
-    "test": "./node_modules/karma/bin/karma start karma.conf.js --single-run",
-
+    "karma": "./node_modules/karma/bin/karma start karma.conf.js --single-run",
 
   },
 
@@ -26,8 +25,8 @@
         "karma-chai": "*",
         "karma-html2js-preprocessor": "*",
         "karma-chrome-launcher": "*",
-        "karma-firefox-launcher": "*",
-        "node-static": "~0.7.6"
+        "karma-firefox-launcher": "*"
+
 
   },
   "repository": {

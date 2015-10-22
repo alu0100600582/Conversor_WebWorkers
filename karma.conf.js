@@ -26,14 +26,16 @@ module.exports = function(config) {
 
     // list of files to exclude
     exclude: [
-
+      'gulpfile.js',
+      'static-server.js'
     ],
 
 
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
-      '**/*.html': 'html2js'
+     'test/test_blanket.html': ['html2js'],
+     'test/index.html': ['html2js']
     },
 
 
