@@ -2,7 +2,7 @@
 
 ### Descripción de la Práctica
 
-En esta práctica vamos a trabajar en la mejora de nuestro Conversor de Temperaturas, para ello vamos a implementar la conversión para poderla ejecutar en un Web Worker. También vamos a trabajar en el desarrollo de las pruebas con Karma y realizaremos la integración contínua con Travis.
+En esta práctica vamos a trabajar en la mejora de nuestro Conversor de Temperaturas (rama master), para ello vamos a implementar la conversión para poderla ejecutar en un Web Worker (Rama gh-pages). También vamos a trabajar en el desarrollo de las pruebas con Karma y realizaremos la integración contínua con Travis (rama travis).
 
 #### Requisitos de la Práctica:
 
