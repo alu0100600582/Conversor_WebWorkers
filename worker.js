@@ -14,5 +14,5 @@ function initworker(){
 }
 
 w.onmessage = function(event){
-    document.getElementById("converted").innerHTML = event.data;
+    document.getElementById("resultado").innerHTML = event.data;
 };
