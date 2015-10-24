@@ -1,12 +1,12 @@
 "use strict";
 
-function Medida (valor, tipo) {
-  this.valor_ = valor;
-  this.tipo_ = tipo;
+function Medida () {
+  this.valor_;
+  this.tipo_;
 }
 
-function Temperatura (valor, tipo) {
-  Medida.call(this, valor, tipo);
+function Temperatura () {
+  Medida.call(this);
 }
 //Temperatura hereda de Medida
 Temperatura.prototype = new Medida();
@@ -14,53 +14,39 @@ Temperatura.prototype = new Medida();
 Medida.prototype.get_valor = function(){return this.valor_;}
 Medida.prototype.get_tipo = function(){return this.tipo_;}
 //Setters
-Medida.prototype.set_valor = function(valor){this.valor_ = valor;}
-Medida.prototype.set_tipo = function(tipo){this.tipo_ = tipo;}
+Medida.prototype.set_valor = function(){this.valor_ = valor;}
+Medida.prototype.set_tipo = function(){this.tipo_ = tipo;}
 
-//Celcius a Farenheit
-Temperatura.prototype.convertirF = function(){
-  return ((this.get_valor()*9)/5)+32;
-}
-//Farenheit a Celcius
-Temperatura.prototype.convertirC = function(){
-  return ((this.get_valor()-32)*5)/9;
-}
+//Constructor
+Temperatura.prototype.constructor = function(temp){
+  var exp_regular = /^\s*([-+]?\d+(?:\.\d+)?(?:e[+-]?\d+)?)\s*([fFcC])/;
+  var valor = temp.match(exp_regular);
 
-// Muestra el resultado final
-Temperatura.prototype.mostrar = function(){
-  var result = this.get_valor() + " " + this.get_tipo();
-  return result;
+  this.set_valor(parseFloat(valor[1]));
+  this.set_tipo(valor[2]);
 }
 
-function calculate(){
-  var result = new Temperatura();
-  var temp = inicial.value;
+//Conversor
+Temperatura.prototype.conversor = function(){
 
-  if (temp){
-    var exp_regular = /^\s*([-+]?\d+(?:\.\d+)?(?:e[+-]?\d+)?)\s*([fFcC])/;
-    var valor = temp.match(exp_regular);
-
-    if (valor){
-      var t = new Temperatura();
-
-      t.set_valor(parseFloat(valor[1]));
-      t.set_tipo(valor[2]);
-
-      if (t.get_tipo() == 'c' || t.get_tipo() == 'C'){
-        result.set_valor(t.convertirF());
-        result.set_tipo("F");
-      }
-      else{
-        result.set_valor(t.convertirC());
-        result.set_tipo("C");
-      }
-      var muestra = result.mostrar();
-      converted.innerHTML = muestra;
-    }
-    else {
-      converted.innerHTML = "ERROR! Prueba con algo como esto '-4.2C' ";
-    }
+  if(this.get_tipo() === 'C' || this.get_tipo() ==='c'){
+    var result = (this.get_valor()*(9/5))+32;
+    return ("El resultado es: " + result + " " + "F");
   }
-  else
-    converted.innerHTML = "";
+
+  else{
+    var result = (this.get_valor()-32)*(5/9);
+    return ("El resultado es: " + result + " " + "C");
+  }
 }
+
+this.addEventListener('message', function(valor){
+
+  var temperatura = new Temperatura();
+  temperatura.inicializador(valor.data);
+
+  var result = temperatura.conversor();
+
+  this.postMessage(result);
+
+}, false);
