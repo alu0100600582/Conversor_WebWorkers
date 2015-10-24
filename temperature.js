@@ -35,12 +35,12 @@ Temperatura.prototype.conversor = function(){
 
   if(this.get_tipo() === 'C' || this.get_tipo() ==='c'){
     var result = (this.get_valor()*(9/5))+32;
-    return ("El resultado es: " + result + " " + "Farenheit");
+    return ("El resultado es: " + result + " " + "F");
   }
 
   else{
     var result = (this.get_valor()-32)*(5/9);
-    return ("El resultado es: " + result + " " + "Celcius");
+    return ("El resultado es: " + result + " " + "C");
   }
 }
 
